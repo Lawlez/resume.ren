@@ -215,45 +215,58 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Senior Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+            <h3 class="mb-0">IT Engineer & Studio Operator</h3>
+            <div class="subheading mb-3">Contentpark Operations AG</div>
+            <p>WE NEED TO REPLACE THIS TEXT RIGHT HERE WITH REAL INFO AND STUFF OK?</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2013 - Present</span>
+            <span class="text-primary">Jan 2018 - August 2019</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+            <h3 class="mb-0">Broadcast Supporter & Graphics Operator</h3>
+            <div class="subheading mb-3">CNN Money Switzerland</div>
+            <p>WE NEED TO REPLACE THIS TEXT RIGHT HERE WITH REAL INFO AND STUFF OK?</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">December 2011 - March 2013</span>
+            <span class="text-primary">Jan 2018 - July 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Web Designer, 3D Generalist & Photographer</h3>
+            <div class="subheading mb-3">lwlx. Web & 3D Design</div>
+            <p>Creating and designing websites for small business owners and individuals, ranging from portfolios over galleries to fully fledged online Shops. 
+            Creating 3D Animations and images for clients.
+            Offering Photoshoots of still life and weddings.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2016 - Today</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+            <div class="subheading mb-3">Pixelplus AG</div>
+            <p>Creating Bootstrap Web experiences from Design Templates, Working with clients, realizing their wishes and changes. Working with HTML, CSS, JS & some PHP.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
+            <span class="text-primary">March 2016 - July 2016</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            <div class="subheading mb-3">Automotive industry Onlineshop</div>
+            <p>Managing 2 Onlineshops with 15k+ daily users. Newsletter, SEO & Managing social media. Planned and created Multilingual Webshops in magento.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
+            <span class="text-primary">August 2014 - February 2016</span>
           </div>
         </div>
 
@@ -269,24 +282,25 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Colorado Boulder</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science - Web Development Track</div>
-            <p>GPA: 3.23</p>
+            <h3 class="mb-0">pluralsight.com</h3>
+            <div class="subheading mb-3">Ethical Hacker Beginner</div>
+            <div>CEH Preparation - notably Vulnerability scanning, security fundamentals, Social Engineering & forensics </div>
+            <p>Rank: Proficent 
+               Score: 179</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2006 - May 2010</span>
+            <span class="text-primary"> May 2018 - August 2018</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
+            <h3 class="mb-0">Benedict Schule Zürich</h3>
+            <div class="subheading mb-3">Informatiker Applikationsentwickler EFZ</div>
+            <p>GPA: 4.4</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
+            <span class="text-primary"> 2012 - July 2016</span>
           </div>
         </div>
 
@@ -311,7 +325,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
+            ICDL Expert Certificate</li>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Mobile Web Specialist - Google Certification</li>
