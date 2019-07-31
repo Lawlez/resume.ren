@@ -152,21 +152,25 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <h2 class="mb-5">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <div class="p"></div>
+
+        <canvas id="skillchart" width="auto" height="auto"></canvas>
+
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item">testb
+          <li class="list-inline-item">
             <i class="fab fa-html5"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-css3-alt"></i>
           </li>
-          <li class="list-inline-item">php
+          <li class="list-inline-item">
             <i class="fab fa-js-square"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-angular"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-react"></i>
+            <i class="fab fa-php"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-node-js"></i>
@@ -347,6 +351,46 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
+  <!-- skills chart script-->
+<script>
+var ctx = document.getElementById('skillchart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['<i class="fab fa-html5"></i>', '<i class="fab fa-css3-alt"></i>', '<i class="fab fa-js-square"></i>', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
 </body>
 
 </html>
