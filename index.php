@@ -355,12 +355,12 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 <script>
 var ctx = document.getElementById('skillchart');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'radar',
     data: {
         labels: ['<i class="fab fa-html5"></i>', '<i class="fab fa-css3-alt"></i>', '<i class="fab fa-js-square"></i>', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: '% Proficiency',
+            data: [90, 86, 30, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
