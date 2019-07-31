@@ -348,7 +348,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Plugin charts.js -->
-  <script src="node_modules/charts.js/chart.min.js"></script>
+  <script src="node_modules/charts.js/dist/Chart.min.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
@@ -358,7 +358,7 @@ var ctx = document.getElementById('skillchart');
 var myChart = new Chart(ctx, {
     type: 'radar',
     data: {
-        labels: ['tets', 'he', 'par', 'Green', 'Purple', 'Orange'],
+        labels: ['tets', 'he', '<i class="fab fa-css3-alt"></i>', 'Green', 'Purple', 'Orange'],
         datasets: [{
             label: '% Proficiency',
             data: [90, 86, 30, 5, 2, 3],
