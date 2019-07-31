@@ -138,7 +138,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <i class="fab fa-twitter"></i>
           </a>
           <a href="#">
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
           </a>
         </div>
       </div>
@@ -153,13 +153,13 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
+          <li class="list-inline-item">testb
             <i class="fab fa-html5"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-css3-alt"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item">php
             <i class="fab fa-js-square"></i>
           </li>
           <li class="list-inline-item">
@@ -330,25 +330,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <i class="fa-li fa fa-trophy text-warning"></i>
             Mobile Web Specialist - Google Certification</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
+            
         </ul>
       </div>
     </section>
