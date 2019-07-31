@@ -347,7 +347,8 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+<!-- Plugin charts.js -->
+  <script src="node_modules/charts.js/chart.min.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
