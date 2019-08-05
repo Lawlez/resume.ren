@@ -369,14 +369,14 @@ var myChart = new Chart(ctx, {
     options: {
     scale: {
         // Hides the scale
-        display: false
+        display: true
     }
 },
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
             label: '% Proficiency',
-            data: [90, 86, 30, 50, 60, 30,70,40,80,80,86,90,50,80,68,98,78,69,89,84,85,78,54,45],
+            data: [90, 86, 30, 50, 60, 30,70,40,80,80,86,90,50,80,68,98,78,69,89,84,85,78,54,1],
             pointbackgroundColor: [
                 'rgba(255, 99, 132, 0.9)'
                 
