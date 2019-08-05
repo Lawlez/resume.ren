@@ -366,6 +366,12 @@ gradient.addColorStop(1, 'rgba(128,96,133,.3)');
 
 var myChart = new Chart(ctx, {
     type: 'radar',
+    options = {
+    scale: {
+        // Hides the scale
+        display: false
+    }
+},
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
