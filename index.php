@@ -360,9 +360,10 @@ var ctx = document.getElementById('skillchart');
 var chart    = document.getElementById('skillchart').getContext('2d');
 var gradient = chart.createRadialGradient(550, 550, 10, 550,550,500);
 
-gradient.addColorStop(0, 'rgba(171,78,160,.8)');
-gradient.addColorStop(0.5, 'rgba(59,58,228,.8)');
-gradient.addColorStop(1, 'rgba(128,96,133,.3)');
+gradient.addColorStop(0, 'rgba(65,20,93,.2)');
+gradient.addColorStop(0.3, 'rgba(17,119,171,.5)');
+gradient.addColorStop(.5, 'rgba(37,119,151,.6)');
+gradient.addColorStop(.8, 'rgba(17,119,171,1)');
 
 var myChart = new Chart(ctx, {
     type: 'radar',
