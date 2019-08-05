@@ -361,9 +361,9 @@ var chart    = document.getElementById('skillchart').getContext('2d');
 var gradient = chart.createRadialGradient(550, 550, 10, 550,550,500);
 
 gradient.addColorStop(0, 'rgba(65,20,93,.8)');
-gradient.addColorStop(0.4, 'rgba(143,46,150,.8)');
-gradient.addColorStop(.66, 'rgba(218,107,224,.8)');
-gradient.addColorStop(1, 'rgba(32,31,161,.8)');
+gradient.addColorStop(0.3, 'rgba(143,46,150,.8)');
+gradient.addColorStop(.5, 'rgba(218,107,224,.8)');
+gradient.addColorStop(.8, 'rgba(32,31,161,.8)');
 
 var myChart = new Chart(ctx, {
     type: 'radar',
