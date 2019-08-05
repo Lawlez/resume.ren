@@ -373,14 +373,20 @@ var myChart = new Chart(ctx, {
     },
     layout: {
             padding: {
-                left: 100,
-                right: 100,
+                left: 40,
+                right: 40,
                 top: 0,
                 bottom: 0
             }
         }
 },
+// Boolean - Whether to animate the chart
+  animation: true,
 
+  // Number - Number of animation steps
+  animationSteps: 50,
+  animationEasing: "easeOutBack",
+responsive: true,
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
