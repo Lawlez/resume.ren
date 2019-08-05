@@ -358,7 +358,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 <script>
 var ctx = document.getElementById('skillchart');
 var chart    = document.getElementById('skillchart').getContext('2d');
-var gradient = chart.createRadialGradient(0, 0, 0, 0,0,500);
+var gradient = chart.createRadialGradient(1, 30, 20, 10,40,500);
 
 gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
 gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.25)');
@@ -370,25 +370,10 @@ var myChart = new Chart(ctx, {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
             label: '% Proficiency',
-            circular: 'true',
             data: [90, 86, 30, 50, 20, 30,20,40,80,80,86,90,50,10,68,98,78,69,89,84,85,78,54,45,33],
             pointbackgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 99, 132, 0.9)'
+                
             ],
             pointborderColor: [
                 'rgba(255, 99, 132, 1)',
@@ -412,10 +397,7 @@ var myChart = new Chart(ctx, {
                 'rgba(255, 59, 80, .8)',
                 
             ],
-            backgroundColor: [
-                gradient,
-                
-            ],
+            backgroundColor: gradient,
             borderWidth: 3
         }]
     }
