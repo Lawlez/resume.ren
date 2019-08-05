@@ -358,12 +358,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 <script>
 var ctx = document.getElementById('skillchart');
 var chart    = document.getElementById('skillchart').getContext('2d');
-var gradient = chart.createRadialGradient(600, 600, 10, 600,600,500);
+var gradient = chart.createRadialGradient(550, 550, 10, 550,550,500);
 
-gradient.addColorStop(0, 'rgba(171,78,160,.7)');
-gradient.addColorStop(0.2, 'rgba(171,78,160,.6)');
-gradient.addColorStop(0.4, 'rgba(200,296,213,1)');
-gradient.addColorStop(0.6, 'rgba(8,6,3,.8)');
+gradient.addColorStop(0, 'rgba(171,78,160,.8)');
+gradient.addColorStop(0.5, 'rgba(171,78,160,.8)');
 gradient.addColorStop(1, 'rgba(128,96,133,.3)');
 
 var myChart = new Chart(ctx, {
