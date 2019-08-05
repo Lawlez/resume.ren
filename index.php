@@ -357,6 +357,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   <!-- skills chart script-->
 <script>
 var ctx = document.getElementById('skillchart');
+var chart    = document.getElementById('skillchart').getContext('2d');
 var gradient = chart.createCircularGradient(0, 0, 0, 450);
 
 gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
