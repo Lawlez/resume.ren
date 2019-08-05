@@ -385,7 +385,7 @@ var myChart = new Chart(ctx, {
 
   // Number - Number of animation steps
   animationSteps: 50,
-  animationEasing: "easeOutBack",
+  animationEasing: "easeInElastic",
 responsive: true,
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
