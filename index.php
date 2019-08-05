@@ -110,7 +110,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          <a class="nav-link js-scroll-trigger" href="#awards">Certificates</a>
         </li>
       </ul>
     </div>
@@ -332,8 +332,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             ICDL Expert Certificate</li>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
+            CEH Beginners Course</li>
           <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Cinema 4D Xpresso Basic</li>
             
         </ul>
       </div>
@@ -358,10 +360,10 @@ var ctx = document.getElementById('skillchart');
 var myChart = new Chart(ctx, {
     type: 'radar',
     data: {
-        labels: ['tets', 'he', '<i class="fab fa-css3-alt"></i>', 'Green', 'Purple', 'Orange'],
+        labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
             label: '% Proficiency',
-            data: [90, 86, 30, 5, 2, 3],
+            data: [90, 86, 30, 50, 20, 30,20,40,80,80,86,90,50,10,68,98,78,69,89,84,85,78,54,45],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
