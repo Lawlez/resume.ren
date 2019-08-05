@@ -110,7 +110,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          <a class="nav-link js-scroll-trigger" href="#awards">Certificates</a>
         </li>
       </ul>
     </div>
@@ -154,7 +154,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <div class="p"></div>
 
-       <!-- <canvas id="skillchart" width="400" height="400"></canvas>-->
+       <canvas id="skillchart" width="400" height="400"></canvas>
 
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
@@ -332,8 +332,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             ICDL Expert Certificate</li>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
+            CEH Beginners Course</li>
           <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Cinema 4D Xpresso Basic</li>
             
         </ul>
       </div>
@@ -355,30 +357,71 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   <!-- skills chart script-->
 <script>
 var ctx = document.getElementById('skillchart');
+var chart    = document.getElementById('skillchart').getContext('2d');
+var gradient = chart.createRadialGradient(550, 550, 10, 550,550,500);
+
+gradient.addColorStop(0, 'rgba(171,78,160,.8)');
+gradient.addColorStop(0.5, 'rgba(59,58,228,.8)');
+gradient.addColorStop(1, 'rgba(128,96,133,.3)');
+
 var myChart = new Chart(ctx, {
     type: 'radar',
+    options: {
+    scale: {
+        // Hides the scale
+        display: true
+    },
+    layout: {
+            padding: {
+                left: 40,
+                right: 40,
+                top: 0,
+                bottom: 0
+            }
+        },
+    animation:{
+      // Boolean - Whether to animate the chart
+  duration: 2300,
+
+  // Number - Number of animation steps
+  numSteps: 90,
+  easing: "easeInOutCirc"
+    }
+},
+
     data: {
-        labels: ['tets', 'he', '<i class="fab fa-css3-alt"></i>', 'Green', 'Purple', 'Orange'],
+        labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
             label: '% Proficiency',
-            data: [90, 86, 30, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+            data: [90, 86, 30, 50, 60, 30,70,40,80,80,86,90,50,80,68,98,78,69,89,84,85,78,54,1],
+            pointbackgroundColor: [
+                'rgba(255, 99, 132, 0.9)'
+                
             ],
-            borderColor: [
+            pointborderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
             ],
-            borderWidth: 1
+            borderColor: [
+                'rgba(255, 59, 80, .8)',
+                
+            ],
+            backgroundColor: gradient,
+            borderWidth: 3
         }]
     }
 });
