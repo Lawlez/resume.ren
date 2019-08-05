@@ -387,6 +387,7 @@ var myChart = new Chart(ctx, {
   animationSteps: 50,
   animationEasing: "easeInElastic",
 responsive: true,
+scaleFontSize: 16,
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
