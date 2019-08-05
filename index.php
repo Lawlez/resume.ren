@@ -366,7 +366,7 @@ gradient.addColorStop(1, 'rgba(128,96,133,.3)');
 
 var myChart = new Chart(ctx, {
     type: 'radar',
-    options = {
+    options: {
     scale: {
         // Hides the scale
         display: false
