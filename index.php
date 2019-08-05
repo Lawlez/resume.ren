@@ -370,7 +370,7 @@ var myChart = new Chart(ctx, {
     scale: {
         // Hides the scale
         display: true
-    }
+    },
     layout: {
             padding: {
                 left: 100,
