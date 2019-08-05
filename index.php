@@ -363,7 +363,7 @@ var myChart = new Chart(ctx, {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
             label: '% Proficiency',
-            circular: 'true',
+            
             data: [90, 86, 30, 50, 20, 30,20,40,80,80,86,90,50,10,68,98,78,69,89,84,85,78,54,45,33],
             pointbackgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -412,6 +412,8 @@ var myChart = new Chart(ctx, {
             borderWidth: 3
         }]
     }
+    options:
+    circular: 'true;'
 });
 </script>
 </body>
