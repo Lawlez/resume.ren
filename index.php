@@ -378,14 +378,14 @@ var myChart = new Chart(ctx, {
                 top: 0,
                 bottom: 0
             }
-        }
+        },
     animation:{
       // Boolean - Whether to animate the chart
-  duration: 1500,
+  duration: 2300,
 
   // Number - Number of animation steps
-  numSteps: 60,
-  easing: "easeInElastic"
+  numSteps: 90,
+  easing: "easeInOutCirc"
     }
 },
 
