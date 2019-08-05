@@ -406,7 +406,7 @@ var myChart = new Chart(ctx, {
                 
             ],
             backgroundColor: [
-                'rgba(85, 59, 180, .8)',
+                'radial-gradient(circle, rgba(171,78,160,1) 0%, rgba(59,58,228,1) 45%, rgba(128,96,133,1) 82%)',
                 
             ],
             borderWidth: 3
