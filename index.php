@@ -379,15 +379,16 @@ var myChart = new Chart(ctx, {
                 bottom: 0
             }
         }
-},
-// Boolean - Whether to animate the chart
-  animation: true,
+    animation:{
+      // Boolean - Whether to animate the chart
+  duration: 1500,
 
   // Number - Number of animation steps
-  animationSteps: 50,
-  animationEasing: "easeInElastic",
-responsive: true,
-scaleFontSize: 16,
+  numSteps: 60,
+  easing: "easeInElastic"
+    }
+},
+
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
