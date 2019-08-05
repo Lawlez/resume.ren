@@ -371,7 +371,16 @@ var myChart = new Chart(ctx, {
         // Hides the scale
         display: true
     }
+    layout: {
+            padding: {
+                left: 100,
+                right: 100,
+                top: 0,
+                bottom: 0
+            }
+        }
 },
+
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
         datasets: [{
