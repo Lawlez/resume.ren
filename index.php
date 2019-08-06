@@ -368,6 +368,7 @@ gradient.addColorStop(.8, 'rgba(17,119,171,1)');
 var myChart = new Chart(ctx, {
     type: 'radar',
     options: {
+     
     scale: {
     ticks: {
         beginAtZero: true,
@@ -378,9 +379,9 @@ var myChart = new Chart(ctx, {
 },
     layout: {
             padding: {
-                left: 40,
+                left: 50,
                 right: 40,
-                top: 0,
+                top: 5,
                 bottom: 0
             }
         },
@@ -397,6 +398,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
         datasets: [{
+          lineTension: 0.2,
             label: '% Proficiency',
             data: [20, 65, 55, 60, 85, 90,65,40,50,90,86,85,88,75,63,80,85,69,70,75,85,70,70,86,80,90,100],
             pointbackgroundColor: [
@@ -405,24 +407,10 @@ var myChart = new Chart(ctx, {
             ],
             pointborderColor: [
                 'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                
             ],
             borderColor: [
-                'rgba(255, 59, 80, .8)',
+                'rgba(218,107,224,1)',
                 
             ],
             backgroundColor: gradient,
