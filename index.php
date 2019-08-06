@@ -153,9 +153,9 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <div class="p"></div>
-
+<div width="900" height="500">
        <canvas id="skillchart" width="400" height="400"></canvas>
-
+</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-html5"></i>
