@@ -153,9 +153,6 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <div class="p"></div>
-<div width="900" height="500">
-       <canvas id="skillchart" width="400" height="400"></canvas>
-</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-html5"></i>
@@ -167,7 +164,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <i class="fab fa-js-square"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
+            <i class="fab fa-wordpress"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-php"></i>
@@ -176,24 +173,36 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <i class="fab fa-node-js"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
+            <i class="fab fa-bitcoin"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-less"></i>
+            <i class="fab fa-ethereum"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-wordpress"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
+            <i class="fab fa-magento"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
+            <i class="fab fa-github"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-npm"></i>
           </li>
+          <li class="list-inline-item">
+            <i class="fab fa-linux"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-adobe"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-bootstrap"></i>
+          </li>
         </ul>
+<div width="900" height="500">
+       <canvas id="skillchart" width="400" height="400"></canvas>
+</div>
 
         <div class="subheading mb-3">Workflow</div>
         <ul class="fa-ul mb-0">
