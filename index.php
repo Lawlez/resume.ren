@@ -405,11 +405,11 @@ var myChart = new Chart(ctx, {
 },
 
     data: {
-        labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
+        labels: [ 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
         datasets: [{
           lineTension: 0.2,
             label: '% Proficiency',
-            data: [20, 65, 55, 60, 85, 90,65,40,50,90,86,85,88,75,63,80,85,69,70,75,85,70,70,86,80,90,100],
+            data: [65, 55, 60, 85, 90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
             pointbackgroundColor: [
                 'rgba(255, 99, 132, 0.9)'
                 
