@@ -266,7 +266,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
+            <h3 class="mb-0">Application Engineer</h3>
             <div class="subheading mb-3">Pixelplus AG</div>
             <p>Creating Bootstrap Web experiences from Design Templates, Working with clients, realizing their wishes and changes. Working with HTML, CSS, JS & some PHP.</p>
           </div>
