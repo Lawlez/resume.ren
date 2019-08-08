@@ -355,6 +355,22 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
     </section>
 
     <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Projects</h2>
+        <p>Some Websites i have been working on:</p>
+        
+        <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://autofaszination.ch/">https://autofaszination.ch/</a> - Django CMS</li>
+            <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://autofaszination.de/">https://autofaszination.de/</a> - Magento</li>
+            <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://www.allegria-sargans.ch">https://www.allegria-sargans.ch</a> - Bootstrap</li>
+            <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://lawlez.ch/">https://lawlez.ch/</a> - PHP, HTML, CSS</li>
+      </div>
+    </section>
+
   </div>
 
   <!-- Bootstrap core JavaScript -->
