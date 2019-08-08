@@ -236,7 +236,11 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
           <div class="resume-content">
             <h3 class="mb-0">IT Engineer & Studio Operator</h3>
             <div class="subheading mb-3">Contentpark Operations AG</div>
-            <p>WE NEED TO REPLACE THIS TEXT RIGHT HERE WITH REAL INFO AND STUFF OK?</p>
+            <p>Maintaining IT infrastructure, maintaining in house security, updating
+Website.
+Preparing studios, equipment, lights etc for shoots. TriCaster Operation.
+DMX configuration / Light planning. Training / coaching new staff &
+trainees. Camera man & Cutter.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Jan 2018 - August 2019</span>
@@ -247,7 +251,9 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
           <div class="resume-content">
             <h3 class="mb-0">Broadcast Supporter & Graphics Operator</h3>
             <div class="subheading mb-3">CNN Money Switzerland</div>
-            <p>WE NEED TO REPLACE THIS TEXT RIGHT HERE WITH REAL INFO AND STUFF OK?</p>
+            <p>Maintaining Broadcast Hardware, staying calm in stressful ‘Live TV’
+environment to fix issues with IT Hard/Software.
+Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Jan 2018 - July 2019</span>
