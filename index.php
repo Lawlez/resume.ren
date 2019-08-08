@@ -335,8 +335,8 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
           <li>
-            <a href="/img/ECDL_Dominik Feger_2013.pdf"><i class="fa-li fa fa-trophy text-warning"></i></a>
-            ICDL Expert Certificate</li>
+            <a href="/img/ECDL_Dominik Feger_2013.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
+            ICDL Expert Certificate</li></a>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             CEH Beginners Course</li>
@@ -347,12 +347,12 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <a href="/img/c4dbeginner.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
             Cinema 4D Beginner</li></a>
 <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google's Android Beginner Scholarship 2017</li>
+            <a href="https://eu.udacity.com/course/android-basics-nanodegree-by-google--nd803"><i class="fa-li fa fa-trophy text-warning"></i>
+            Google's Android Beginner Scholarship 2017</li></a>
         </ul>
         <div>
           <h3 class="mb-5">Pluralsight Skill IQs</h3>
-          <img src="img/skilliq.png">
+          <img width="100%" src="img/skilliq.png">
         </div>
       </div>
     </section>
