@@ -134,16 +134,16 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         </p>
         <div class="social-icons">
-          <a href="#">
+          <a href="https://linkedin.com/in/dominik-feger/">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/Lawlez">
             <i class="fab fa-github"></i>
           </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
+          <a href="https://www.behance.net/lawlez">
+            <i class="fab behance-square"></i>
           </a>
-          <a href="#">
+          <a href="https://instagram.com/lawlez_render/">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -335,16 +335,23 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="/img/ECDL_Dominik Feger_2013.pdf"><i class="fa-li fa fa-trophy text-warning"></i></a>
             ICDL Expert Certificate</li>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             CEH Beginners Course</li>
           <li>
+             <a href="/img/xpressoc4d.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
+            Basics Of XPresso Cinema 4D</li></a>
+            <a href="/img/c4dbeginner.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
+            Cinema 4D Beginner</li></a>
             <i class="fa-li fa fa-trophy text-warning"></i>
-            Cinema 4D Xpresso Basic</li>
-            
+            Google's Android Beginner Scholarship 2017</li>
         </ul>
+        <div>
+          <h3 class="mb-5">Pluralsight Skill IQs</h3>
+          <img src="img/skilliq.png">
+        </div>
       </div>
     </section>
     <hr class="m-0">
@@ -437,7 +444,7 @@ var myChart = new Chart(ctx, {
             label: '% Proficiency',
             data: [65, 55, 60, 85, 90 ,65 ,40 ,50 ,90 ,86 ,85 ,88 ,75 ,25 ,63 ,80 ,85 ,69 ,70 ,75 ,85 ,70 ,70 ,86 ,80 ,90 ,100 ],
             pointbackgroundColor: [
-                'rgba(255, 99, 132, 0.9)'
+                'rgba(255, 99, 132, 0.5)'
                 
             ],
             pointborderColor: [
