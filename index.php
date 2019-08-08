@@ -123,10 +123,13 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <h1 class="mb-0">Dominik
           <span class="text-primary">Feger</span>
         </h1>
-        <div class="subheading mb-5">Zurich, Switzerland · Appliation Engineer · 3D & Graphicdesigner · Security Engineer
+        <div class="subheading mb-5">Zurich, Switzerland · Application Engineer · 3D & Graphicdesigner · Security Engineer
           <a href="mailto:name@email.com">dominik@lawlez.ch</a>
         </div>
-        <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        <p class="lead mb-5">
+          
+
+        </p>
         <div class="social-icons">
           <a href="#">
             <i class="fab fa-linkedin-in"></i>
@@ -153,9 +156,6 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <div class="p"></div>
-
-       <canvas id="skillchart" width="400" height="400"></canvas>
-
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-html5"></i>
@@ -167,7 +167,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <i class="fab fa-js-square"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
+            <i class="fab fa-wordpress"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-php"></i>
@@ -176,24 +176,36 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <i class="fab fa-node-js"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
+            <i class="fab fa-bitcoin"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-less"></i>
+            <i class="fab fa-ethereum"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-wordpress"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
+            <i class="fab fa-magento"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
+            <i class="fab fa-github"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-npm"></i>
           </li>
+          <li class="list-inline-item">
+            <i class="fab fa-linux"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-adobe"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-bootstrap"></i>
+          </li>
         </ul>
+<div width="900" height="500">
+       <canvas id="skillchart" width="400" height="400"></canvas>
+</div>
 
         <div class="subheading mb-3">Workflow</div>
         <ul class="fa-ul mb-0">
@@ -300,7 +312,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">Benedict Schule Zürich</h3>
-            <div class="subheading mb-3">Informatiker Applikationsentwickler EFZ</div>
+            <div class="subheading mb-3">IT Application Engineer EFZ</div>
             <p>GPA: 4.4</p>
           </div>
           <div class="resume-date text-md-right">
@@ -311,17 +323,9 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
       </div>
     </section>
 
-    <hr class="m-0">
+    
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-      </div>
-    </section>
-
-    <hr class="m-0">
+   
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
@@ -340,7 +344,17 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         </ul>
       </div>
     </section>
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a web developer, I enjoy doing creative work on my Computer using tools such as Cinema 4D, Octane & Photoshop.</p>
+        
+        <p class="mb-0">Early on I caught interest in Blockchain technology and Cryptocurrencies, which I have been mining and trading for a while. Through the Blockchain industry I got interested in Cybersecurity, which is why today I often practice my penetration testing skills at home on my own infrastructure or with the help of online quests. </p>
+      </div>
+    </section>
 
+    <hr class="m-0">
   </div>
 
   <!-- Bootstrap core JavaScript -->
@@ -368,15 +382,20 @@ gradient.addColorStop(.8, 'rgba(17,119,171,1)');
 var myChart = new Chart(ctx, {
     type: 'radar',
     options: {
+     
     scale: {
-        // Hides the scale
-        display: true
-    },
+    ticks: {
+        beginAtZero: true,
+        max: 100,
+        min: 0,
+        stepSize: 5
+    }
+},
     layout: {
             padding: {
-                left: 40,
+                left: 50,
                 right: 40,
-                top: 0,
+                top: 5,
                 bottom: 0
             }
         },
@@ -391,34 +410,21 @@ var myChart = new Chart(ctx, {
 },
 
     data: {
-        labels: ['Json', 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design' ],
+        labels: [ 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
         datasets: [{
+          lineTension: 0.2,
             label: '% Proficiency',
-            data: [90, 86, 30, 50, 60, 30,70,40,80,80,86,90,50,80,68,98,78,69,89,84,85,78,54,1],
+            data: [65, 55, 60, 85, 90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
             pointbackgroundColor: [
                 'rgba(255, 99, 132, 0.9)'
                 
             ],
             pointborderColor: [
                 'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                
             ],
             borderColor: [
-                'rgba(255, 59, 80, .8)',
+                'rgba(218,107,224,1)',
                 
             ],
             backgroundColor: gradient,
