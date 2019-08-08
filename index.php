@@ -141,7 +141,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             <i class="fab fa-github"></i>
           </a>
           <a href="https://www.behance.net/lawlez">
-            <i class="fab behance-square"></i>
+            <i class="fab fa-behance-square"></i>
           </a>
           <a href="https://instagram.com/lawlez_render/">
             <i class="fab fa-instagram"></i>
@@ -343,8 +343,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
           <li>
              <a href="/img/xpressoc4d.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
             Basics Of XPresso Cinema 4D</li></a>
+            <li>
             <a href="/img/c4dbeginner.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
             Cinema 4D Beginner</li></a>
+<li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Google's Android Beginner Scholarship 2017</li>
         </ul>
