@@ -266,7 +266,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
+            <h3 class="mb-0">Application Engineer</h3>
             <div class="subheading mb-3">Pixelplus AG</div>
             <p>Creating Bootstrap Web experiences from Design Templates, Working with clients, realizing their wishes and changes. Working with HTML, CSS, JS & some PHP.</p>
           </div>
@@ -355,6 +355,22 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
     </section>
 
     <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Projects</h2>
+        <p>Some Websites i have been working on:</p>
+        
+        <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://autofaszination.ch/">https://autofaszination.ch/</a> - Django CMS</li>
+            <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://autofaszination.de/">https://autofaszination.de/</a> - Magento</li>
+            <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://www.allegria-sargans.ch">https://www.allegria-sargans.ch</a> - Bootstrap</li>
+            <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://lawlez.ch/">https://lawlez.ch/</a> - PHP, HTML, CSS</li>
+      </div>
+    </section>
+
   </div>
 
   <!-- Bootstrap core JavaScript -->
@@ -414,7 +430,7 @@ var myChart = new Chart(ctx, {
         datasets: [{
           lineTension: 0.2,
             label: '% Proficiency',
-            data: [65, 55, 60, 85, 90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
+            data: [65, 55, 60, 85, 90 ,65 ,40 ,50 ,90 ,86 ,85 ,88 ,75 ,25 ,63 ,80 ,85 ,69 ,70 ,75 ,85 ,70 ,70 ,86 ,80 ,90 ,100 ],
             pointbackgroundColor: [
                 'rgba(255, 99, 132, 0.9)'
                 
