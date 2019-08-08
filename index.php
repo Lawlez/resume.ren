@@ -112,6 +112,9 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Certificates</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#links">Links</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -355,19 +358,21 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
     </section>
 
     <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="links">
       <div class="w-100">
         <h2 class="mb-5">Projects</h2>
         <p>Some Websites i have been working on:</p>
-        
-        <i class="fa-li fa fa-globe text-warning"></i>
+        <ul class="fa-ul mb-0">
+        <li><i class="fa-li fas fa-globe text-warning"></i>
             <a href="https://autofaszination.ch/">https://autofaszination.ch/</a> - Django CMS</li>
-            <i class="fa-li fa fa-globe text-warning"></i>
+          <li>  <i class="fa-li fa fa-globe text-warning"></i>
             <a href="https://autofaszination.de/">https://autofaszination.de/</a> - Magento</li>
-            <i class="fa-li fa fa-globe text-warning"></i>
+            <li><i class="fa-li fa fa-globe text-warning"></i>
             <a href="https://www.allegria-sargans.ch">https://www.allegria-sargans.ch</a> - Bootstrap</li>
-            <i class="fa-li fa fa-globe text-warning"></i>
+            <li><i class="fa-li fa fa-globe text-warning"></i>
             <a href="https://lawlez.ch/">https://lawlez.ch/</a> - PHP, HTML, CSS</li>
+
+          </ul>
       </div>
     </section>
 
