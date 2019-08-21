@@ -24,15 +24,14 @@ function write_log($message, $logfile = 'logs/weblog.lwlx') {
 if(isset($_COOKIE['countVisit'])){
 $countVisit = $_COOKIE['countVisit'];
 }
+else{
+  $countVisit = 0;
+}
 if(isset($_COOKIE['lastVisit'])){
 $lastVisit = $_COOKIE['lastVisit'];
 
 }
-  if(isset($_COOKIE['cpuser'])){
-$cpuser = $_COOKIE['cpuser'];
-
-}
-  setcookie('cpuser', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, time()+72000);//set usr cookie
+  setcookie('user', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, time()+72000);//set usr cookie
 // set cookie for countVisit
 setcookie('countVisit', $countVisit++,  time()+360000);
 // set cookie for last visit
@@ -437,7 +436,7 @@ var myChart = new Chart(ctx, {
         },
     animation:{
       // Boolean - Whether to animate the chart
-  duration: 2300,
+  duration: 2800,
 
   // Number - Number of animation steps
   numSteps: 90,
