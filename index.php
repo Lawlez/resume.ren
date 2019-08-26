@@ -29,12 +29,11 @@ else{
 }
 if(isset($_COOKIE['lastVisit'])){
 $lastVisit = $_COOKIE['lastVisit'];
-
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
 }
-$countVisit = $countVisit++;
   setcookie('user', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, time()+72000);//set usr cookie
 // set cookie for countVisit
-setcookie('countVisit', $countVisit,  time()+360000);
+setcookie('countVisit', ++$countVisit,  time()+360000);
 // set cookie for last visit
 setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
@@ -52,7 +51,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   }
   $date = date("Y-m-d H:i:s", $time);
   if($fd = @fopen($logfile, "a")) {
-    $result = fwrite($fd,"Date: ".$date."| IP: ".$remote_addr."| usr/loggedin: ".USER_COOKIE."/".LOGGED_IN_COOKIE."| Req-Script: ".$request_uri."| Msg: ".$message." | Last Visit:".$lastVisit." | Visit Count: [".$countVisit."]\n");
+    $result = fwrite($fd,"Date: ".$date."| IP: ".$remote_addr."| HTTP UA: ".$user_agent."| Req-Script: ".$request_uri."| Msg: ".$message." | Last Visit:".$lastVisit." | Visit Count: [".$countVisit."]\n");
     fclose($fd);
 
 }
@@ -77,6 +76,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+
+<!-- includ REACT.js for testing purp-->
+<script src="https://unpkg.com/react@16.4.1/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.production.min.js"></script>
 
 </head>
 
@@ -220,10 +223,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             Cross Browser Testing &amp; Debugging</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
+            OO Programming</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+            Beautiful usable Material Design</li>
         </ul>
       </div>
     </section>
@@ -448,9 +451,11 @@ var myChart = new Chart(ctx, {
     data: {
         labels: [ 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
         datasets: [{
+          data: [65,55,60,85,90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
+
           lineTension: 0.2,
-            label: '% Proficiency',
-            data: [65, 55, 60, 85, 90 ,65 ,40 ,50 ,90 ,86 ,85 ,88 ,75 ,25 ,63 ,80 ,85 ,69 ,70 ,75 ,85 ,70 ,70 ,86 ,80 ,90 ,100 ],
+            label: 'Proficiency',
+            
             pointbackgroundColor: [
                 'rgba(255, 99, 132, 0.5)'
                 
