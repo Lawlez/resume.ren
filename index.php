@@ -51,7 +51,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   }
   $date = date("Y-m-d H:i:s", $time);
   if($fd = @fopen($logfile, "a")) {
-    $result = fwrite($fd,"Date: ".$date."| IP: ".$remote_addr."| usr/loggedin: ".USER_COOKIE."HTTP UA".$user_agent."| Req-Script: ".$request_uri."| Msg: ".$message." | Last Visit:".$lastVisit." | Visit Count: [".$countVisit."]\n");
+    $result = fwrite($fd,"Date: ".$date."| IP: ".$remote_addr."| HTTP UA: ".$user_agent."| Req-Script: ".$request_uri."| Msg: ".$message." | Last Visit:".$lastVisit." | Visit Count: [".$countVisit."]\n");
     fclose($fd);
 
 }
