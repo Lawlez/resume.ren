@@ -78,6 +78,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
+<!-- includ REACT.js for testing purp-->
+<script src="https://unpkg.com/react@16.4.1/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.production.min.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -220,10 +224,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
             Cross Browser Testing &amp; Debugging</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
+            OO Programming</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+            Beautiful usable Material Design</li>
         </ul>
       </div>
     </section>
@@ -449,8 +453,8 @@ var myChart = new Chart(ctx, {
         labels: [ 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
         datasets: [{
           lineTension: 0.2,
-            label: '% Proficiency',
-            data: [65, 55, 60, 85, 90 ,65 ,40 ,50 ,90 ,86 ,85 ,88 ,75 ,25 ,63 ,80 ,85 ,69 ,70 ,75 ,85 ,70 ,70 ,86 ,80 ,90 ,100 ],
+            label: 'Proficiency',
+            data: [65,55,60,85,90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100,2],
             pointbackgroundColor: [
                 'rgba(255, 99, 132, 0.5)'
                 
