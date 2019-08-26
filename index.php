@@ -31,10 +31,9 @@ if(isset($_COOKIE['lastVisit'])){
 $lastVisit = $_COOKIE['lastVisit'];
 
 }
-$countVisit = $countVisit++;
   setcookie('user', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, time()+72000);//set usr cookie
 // set cookie for countVisit
-setcookie('countVisit', $countVisit,  time()+360000);
+setcookie('countVisit', ++$countVisit,  time()+360000);
 // set cookie for last visit
 setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
@@ -453,7 +452,7 @@ var myChart = new Chart(ctx, {
         labels: [ 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
         datasets: [{
           data: [65,55,60,85,90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
-          
+
           lineTension: 0.2,
             label: 'Proficiency',
             
