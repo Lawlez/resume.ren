@@ -29,7 +29,7 @@ else{
 }
 if(isset($_COOKIE['lastVisit'])){
 $lastVisit = $_COOKIE['lastVisit'];
-
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
 }
   setcookie('user', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, time()+72000);//set usr cookie
 // set cookie for countVisit
@@ -51,7 +51,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
   }
   $date = date("Y-m-d H:i:s", $time);
   if($fd = @fopen($logfile, "a")) {
-    $result = fwrite($fd,"Date: ".$date."| IP: ".$remote_addr."| usr/loggedin: ".USER_COOKIE."/".LOGGED_IN_COOKIE."| Req-Script: ".$request_uri."| Msg: ".$message." | Last Visit:".$lastVisit." | Visit Count: [".$countVisit."]\n");
+    $result = fwrite($fd,"Date: ".$date."| IP: ".$remote_addr."| usr/loggedin: ".USER_COOKIE."HTTP UA".$user_agent."| Req-Script: ".$request_uri."| Msg: ".$message." | Last Visit:".$lastVisit." | Visit Count: [".$countVisit."]\n");
     fclose($fd);
 
 }
