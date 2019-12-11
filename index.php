@@ -210,7 +210,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
           </li>
         </ul>
 <div width="900" height="500">
-       <canvas id="skillchart" width="400" height="400"></canvas>
+       <canvas id="skillchart" width="450" height="450"></canvas>
 </div>
 
         <div class="subheading mb-3">Workflow</div>
@@ -449,11 +449,11 @@ var myChart = new Chart(ctx, {
 },
 
     data: {
-        labels: [ 'PHP', 'JS', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
+        labels: [ 'PHP', 'JS / React', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
         datasets: [{
-          data: [65,55,60,85,90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
+          data: [55,78,50,85,90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
 
-          lineTension: 0.2,
+          lineTension: 0.25,
             label: 'Proficiency',
             
             pointbackgroundColor: [
