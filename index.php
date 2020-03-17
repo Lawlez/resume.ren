@@ -1,6 +1,12 @@
 <!-- get constants & error reporting-->
 <?php
 require 'constants.php';
+header("X-Frame-Options: DENY");
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header('X-Powered-By: the heart and mind :)');
+header("X-Content-Type-Options: nosniff");
+header("Pragma: no-cache");
 error_reporting(E_ALL);
 ?>
 <!DOCTYPE html>
@@ -31,11 +37,29 @@ if(isset($_COOKIE['lastVisit'])){
 $lastVisit = $_COOKIE['lastVisit'];
 $user_agent = $_SERVER['HTTP_USER_AGENT'];
 }
-  setcookie('user', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, time()+72000);//set usr cookie
+  setcookie('user', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, [
+    'expires' => time() + 686400,
+    'path' => '/',
+    'secure' => true,
+    'samesite' => 'strict',
+    'httponly' => true
+]);//set usr cookie
 // set cookie for countVisit
-setcookie('countVisit', ++$countVisit,  time()+360000);
+setcookie('countVisit', ++$countVisit, [
+    'expires' => time() + 686400,
+    'path' => '/',
+    'secure' => true,
+    'samesite' => 'strict',
+    'httponly' => true
+]);
 // set cookie for last visit
-setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
+setcookie('lastVisit', date("d-m-Y H:i:s"),  [
+    'expires' => time() + 686400,
+    'path' => '/',
+    'secure' => true,
+    'samesite' => 'strict',
+    'httponly' => true
+]);
 
 
   if( ($time = $_SERVER['REQUEST_TIME']) == '') {
@@ -76,11 +100,6 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+360000);
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
-
-<!-- includ REACT.js for testing purp-->
-<script src="https://unpkg.com/react@16.4.1/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.production.min.js"></script>
-
 </head>
 
 <body id="page-top">
