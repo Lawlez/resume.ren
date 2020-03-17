@@ -7,7 +7,7 @@ OO Resume Website based on HTML / PHP with visualized skills using charts.js
 ## Preview
 
 
-**[View Live Preview](https://dev-skills.rendered.ch/)**
+**[View Live Preview](https://skills.rendered.ch/)**
 
 ## Status
 
