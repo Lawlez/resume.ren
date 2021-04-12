@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
+ * Start Bootstrap - Resume v5.2.0 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #1177AB;
+  background-color: #17a2b8;
 }
 
 .dev-icons {
@@ -80,7 +80,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #1177AB;
+  color: #17a2b8;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -90,7 +90,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #36cee6;
 }
 
 @media (min-width: 992px) {
@@ -176,70 +176,17 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #1177AB !important;
+  background-color: #17a2b8 !important;
 }
 
 .text-primary {
-  color: #1177AB !important;
+  color: #17a2b8 !important;
 }
 
 a {
-  color: #1177AB;
+  color: #17a2b8;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #0f6674;
 }
-
-/*
-
-CHART.JS
-
-
- * DOM element rendering detection
- * https://davidwalsh.name/detect-node-insertion
- */
-@keyframes chartjs-render-animation {
-  from { opacity: 0.99; }
-  to { opacity: 1; }
-}
-
-.chartjs-render-monitor {
-  animation: chartjs-render-animation 0.001s;
-}
-
-/*
- * DOM element resizing detection
- * https://github.com/marcj/css-element-queries
- */
-.chartjs-size-monitor,
-.chartjs-size-monitor-expand,
-.chartjs-size-monitor-shrink {
-  position: absolute;
-  direction: ltr;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: -1;
-}
-
-.chartjs-size-monitor-expand > div {
-  position: absolute;
-  width: 1000000px;
-  height: 1000000px;
-  left: 0;
-  top: 0;
-}
-
-.chartjs-size-monitor-shrink > div {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  left: 0;
-  top: 0;
-}
-
