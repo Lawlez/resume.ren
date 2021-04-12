@@ -14,73 +14,72 @@ error_reporting(E_ALL);
 <!-- Log collect-->
 <?php
 write_log("visit");
-define("DEFAULT_LOG","logs/weblog.lwlx");
- 
-function write_log($message, $logfile = 'logs/weblog.lwlx') {
-  if($logfile == '') {
+define("DEFAULT_LOG", "logs/weblog.lwlx");
+
+function write_log($message, $logfile = 'logs/weblog.lwlx')
+{
+  if ($logfile == '') {
     if (defined(DEFAULT_LOG) == TRUE) {
-        $logfile = DEFAULT_LOG;
-    }
-    else {
-        error_log('No log file defined!',0);
-        return array(status => false, message => 'No log file defined!');
+      $logfile = DEFAULT_LOG;
+    } else {
+      error_log('No log file defined!', 0);
+      return array(status => false, message => 'No log file defined!');
     }
   }
 
-if(isset($_COOKIE['countVisit'])){
-$countVisit = $_COOKIE['countVisit'];
-}
-else{
-  $countVisit = 0;
-}
-if(isset($_COOKIE['lastVisit'])){
-$lastVisit = $_COOKIE['lastVisit'];
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-}
-  setcookie('user', date("d-m-Y"),USER_COOKIE ,PASS_COOKIE, [
+  if (isset($_COOKIE['countVisit'])) {
+    $countVisit = $_COOKIE['countVisit'];
+  } else {
+    $countVisit = 0;
+  }
+  if (isset($_COOKIE['lastVisit'])) {
+    $lastVisit = $_COOKIE['lastVisit'];
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+  }
+  setcookie('user', date("d-m-Y"), USER_COOKIE, PASS_COOKIE, [
     'expires' => time() + 686400,
     'path' => '/',
     'secure' => true,
     'samesite' => 'strict',
     'httponly' => true
-]);//set usr cookie
-// set cookie for countVisit
-setcookie('countVisit', ++$countVisit, [
+  ]); //set usr cookie
+  // set cookie for countVisit
+  setcookie('countVisit', ++$countVisit, [
     'expires' => time() + 686400,
     'path' => '/',
     'secure' => true,
     'samesite' => 'strict',
     'httponly' => true
-]);
-// set cookie for last visit
-setcookie('lastVisit', date("d-m-Y H:i:s"),  [
+  ]);
+  // set cookie for last visit
+  setcookie('lastVisit', date("d-m-Y H:i:s"),  [
     'expires' => time() + 686400,
     'path' => '/',
     'secure' => true,
     'samesite' => 'strict',
     'httponly' => true
-]);
+  ]);
 
 
-  if( ($time = $_SERVER['REQUEST_TIME']) == '') {
+  if (($time = $_SERVER['REQUEST_TIME']) == '') {
     $time = time();
   }
- 
-  if( ($remote_addr = $_SERVER['REMOTE_ADDR']) == '') {
+
+  if (($remote_addr = $_SERVER['REMOTE_ADDR']) == '') {
     $remote_addr = "REMOTE_ADDR_UNKNOWN";
   }
- 
-  if( ($request_uri = $_SERVER['REQUEST_URI']) == '') {
+
+  if (($request_uri = $_SERVER['REQUEST_URI']) == '') {
     $request_uri = "REQUEST_URI_UNKNOWN";
   }
   $date = date("Y-m-d H:i:s", $time);
-  if($fd = @fopen($logfile, "a")) {
-    $result = fwrite($fd,"Date: ".$date."| IP: ".$remote_addr."| HTTP UA: ".$user_agent."| Req-Script: ".$request_uri."| Msg: ".$message." | Last Visit:".$lastVisit." | Visit Count: [".$countVisit."]\n");
+  if ($fd = @fopen($logfile, "a")) {
+    $result = fwrite($fd, "Date: " . $date . "| IP: " . $remote_addr . "| HTTP UA: " . $user_agent . "| Req-Script: " . $request_uri . "| Msg: " . $message . " | Last Visit:" . $lastVisit . " | Visit Count: [" . $countVisit . "]\n");
     fclose($fd);
-
-}
+  }
 }
 ?>
+
 <head>
 
   <meta charset="utf-8">
@@ -152,7 +151,7 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  [
           <a href="mailto:name@email.com">dominik@lawlez.ch</a>
         </div>
         <p class="lead mb-5">
-          
+
 
         </p>
         <div class="social-icons">
@@ -228,29 +227,33 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  [
             <i class="fab fa-bootstrap"></i>
           </li>
         </ul>
-<div width="900" height="500">
-       <canvas id="skillchart" width="450" height="450"></canvas>
-</div>
+        <div width="900" height="500">
+          <canvas id="skillchart" width="450" height="450"></canvas>
+        </div>
 
         <div class="subheading mb-3">Workflow</div>
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
+            Mobile-First, Responsive Design
+          </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
+            Cross Browser Testing &amp; Debugging
+          </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            OO Programming</li>
+            OO Programming
+          </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Beautiful usable Material Design</li>
+            Beautiful usable Material Design
+          </li>
         </ul>
       </div>
     </section>
     <hr class="m-0">
-<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
 
@@ -259,10 +262,10 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  [
             <h3 class="mb-0">IT Engineer & Studio Operator</h3>
             <div class="subheading mb-3">Contentpark Operations AG</div>
             <p>Maintaining IT infrastructure, maintaining in house security, updating
-Website.
-Preparing studios, equipment, lights etc for shoots. TriCaster Operation.
-DMX configuration / Light planning. Training / coaching new staff &
-trainees. Camera man & Cutter.</p>
+              Website.
+              Preparing studios, equipment, lights etc for shoots. TriCaster Operation.
+              DMX configuration / Light planning. Training / coaching new staff &
+              trainees. Camera man & Cutter.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Jan 2018 - August 2019</span>
@@ -274,8 +277,8 @@ trainees. Camera man & Cutter.</p>
             <h3 class="mb-0">Broadcast Supporter & Graphics Operator</h3>
             <div class="subheading mb-3">CNN Money Switzerland</div>
             <p>Maintaining Broadcast Hardware, staying calm in stressful ‘Live TV’
-environment to fix issues with IT Hard/Software.
-Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
+              environment to fix issues with IT Hard/Software.
+              Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Jan 2018 - July 2019</span>
@@ -286,9 +289,9 @@ Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
           <div class="resume-content">
             <h3 class="mb-0">Web Designer, 3D Generalist & Photographer</h3>
             <div class="subheading mb-3">lwlx. Web & 3D Design</div>
-            <p>Creating and designing websites for small business owners and individuals, ranging from portfolios over galleries to fully fledged online Shops. 
-            Creating 3D Animations and images for clients.
-            Offering Photoshoots of still life and weddings.</p>
+            <p>Creating and designing websites for small business owners and individuals, ranging from portfolios over galleries to fully fledged online Shops.
+              Creating 3D Animations and images for clients.
+              Offering Photoshoots of still life and weddings.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2016 - Today</span>
@@ -332,8 +335,8 @@ Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
             <h3 class="mb-0">pluralsight.com</h3>
             <div class="subheading mb-3">Ethical Hacker Beginner</div>
             <div>CEH Preparation - notably Vulnerability scanning, security fundamentals, Social Engineering & forensics </div>
-            <p>Rank: Proficent 
-               Score: 179</p>
+            <p>Rank: Proficent
+              Score: 179</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary"> May 2018 - August 2018</span>
@@ -353,30 +356,30 @@ Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
 
       </div>
     </section>
-
-    
-
-   
-
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
           <li>
             <a href="/img/ECDL_Dominik Feger_2013.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
-            ICDL Expert Certificate</li></a>
+              ICDL Expert Certificate
+          </li></a>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
-            CEH Beginners Course</li>
+            CEH Beginners Course
+          </li>
           <li>
-             <a href="/img/xpressoc4d.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
-            Basics Of XPresso Cinema 4D</li></a>
-            <li>
+            <a href="/img/xpressoc4d.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
+              Basics Of XPresso Cinema 4D
+          </li></a>
+          <li>
             <a href="/img/c4dbeginner.pdf"><i class="fa-li fa fa-trophy text-warning"></i>
-            Cinema 4D Beginner</li></a>
-<li>
+              Cinema 4D Beginner
+          </li></a>
+          <li>
             <a href="https://eu.udacity.com/course/android-basics-nanodegree-by-google--nd803"><i class="fa-li fa fa-trophy text-warning"></i>
-            Google's Android Beginner Scholarship 2017</li></a>
+              Google's Android Beginner Scholarship 2017
+          </li></a>
         </ul>
         <div>
           <h3 class="mb-5">Pluralsight Skill IQs</h3>
@@ -389,7 +392,7 @@ Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
         <p>Apart from being a web developer, I enjoy doing creative work on my Computer using tools such as Cinema 4D, Octane & Photoshop.</p>
-        
+
         <p class="mb-0">Early on I caught interest in Blockchain technology and Cryptocurrencies, which I have been mining and trading for a while. Through the Blockchain industry I got interested in Cybersecurity, which is why today I often practice my penetration testing skills at home on my own infrastructure or with the help of online quests. </p>
       </div>
     </section>
@@ -400,16 +403,20 @@ Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
         <h2 class="mb-5">Projects</h2>
         <p>Some Websites i have been working on:</p>
         <ul class="fa-ul mb-0">
-        <li><i class="fa-li fas fa-globe text-warning"></i>
-            <a href="https://autofaszination.ch/">https://autofaszination.ch/</a> - Django CMS</li>
-          <li>  <i class="fa-li fa fa-globe text-warning"></i>
-            <a href="https://autofaszination.de/">https://autofaszination.de/</a> - Magento</li>
-            <li><i class="fa-li fa fa-globe text-warning"></i>
-            <a href="https://www.allegria-sargans.ch">https://www.allegria-sargans.ch</a> - Bootstrap</li>
-            <li><i class="fa-li fa fa-globe text-warning"></i>
-            <a href="https://lawlez.ch/">https://lawlez.ch/</a> - PHP, HTML, CSS</li>
+          <li><i class="fa-li fas fa-globe text-warning"></i>
+            <a href="https://autofaszination.ch/">https://autofaszination.ch/</a> - Django CMS
+          </li>
+          <li> <i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://autofaszination.de/">https://autofaszination.de/</a> - Magento
+          </li>
+          <li><i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://www.allegria-sargans.ch">https://www.allegria-sargans.ch</a> - Bootstrap
+          </li>
+          <li><i class="fa-li fa fa-globe text-warning"></i>
+            <a href="https://lawlez.ch/">https://lawlez.ch/</a> - PHP, HTML, CSS
+          </li>
 
-          </ul>
+        </ul>
       </div>
     </section>
 
@@ -421,78 +428,78 @@ Graphics playout, Dalet & TriCaster. Remote Camera & Light operator</p>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<!-- Plugin charts.js -->
+  <!-- Plugin charts.js -->
   <script src="js/Chart.min.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
   <!-- skills chart script-->
-<script>
-var ctx = document.getElementById('skillchart');
-var chart    = document.getElementById('skillchart').getContext('2d');
-var gradient = chart.createRadialGradient(550, 550, 10, 550,550,500);
+  <script>
+    var ctx = document.getElementById('skillchart');
+    var chart = document.getElementById('skillchart').getContext('2d');
+    var gradient = chart.createRadialGradient(550, 550, 10, 550, 550, 500);
 
-gradient.addColorStop(0, 'rgba(65,20,93,.2)');
-gradient.addColorStop(0.3, 'rgba(17,119,171,.5)');
-gradient.addColorStop(.5, 'rgba(37,119,151,.6)');
-gradient.addColorStop(.8, 'rgba(17,119,171,1)');
+    gradient.addColorStop(0, 'rgba(65,20,93,.2)');
+    gradient.addColorStop(0.3, 'rgba(17,119,171,.5)');
+    gradient.addColorStop(.5, 'rgba(37,119,151,.6)');
+    gradient.addColorStop(.8, 'rgba(17,119,171,1)');
 
-var myChart = new Chart(ctx, {
-    type: 'radar',
-    options: {
-     
-    scale: {
-    ticks: {
-        beginAtZero: true,
-        max: 100,
-        min: 0,
-        stepSize: 5
-    }
-},
-    layout: {
-            padding: {
-                left: 50,
-                right: 40,
-                top: 5,
-                bottom: 0
-            }
+    var myChart = new Chart(ctx, {
+      type: 'radar',
+      options: {
+
+        scale: {
+          ticks: {
+            beginAtZero: true,
+            max: 100,
+            min: 0,
+            stepSize: 5
+          }
         },
-    animation:{
-      // Boolean - Whether to animate the chart
-  duration: 2800,
+        layout: {
+          padding: {
+            left: 50,
+            right: 40,
+            top: 5,
+            bottom: 0
+          }
+        },
+        animation: {
+          // Boolean - Whether to animate the chart
+          duration: 2800,
 
-  // Number - Number of animation steps
-  numSteps: 90,
-  easing: "easeInOutCirc"
-    }
-},
+          // Number - Number of animation steps
+          numSteps: 90,
+          easing: "easeInOutCirc"
+        }
+      },
 
-    data: {
-        labels: [ 'PHP', 'JS / React', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux','Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation' ],
+      data: {
+        labels: ['PHP', 'JS / React', 'jQuery', 'HTML', 'CSS', 'mySQL', 'Solidity', 'Databases', 'CMS', 'Bootstrap', 'Magento', 'Django', 'Kali Linux', 'Json', 'Apache', 'Git', 'SEO', 'Social Engineering', 'Penetration Testing', 'XSS', 'SMM', 'SEM', 'Debugging', 'Digital Design', 'Blockchain', 'Teamwork', 'Motivation'],
         datasets: [{
-          data: [55,78,50,85,90,65,40,50,90,86,85,88,75,25,63,80,85,69,70,75,85,70,70,86,80,90,100],
+          data: [55, 78, 50, 85, 90, 65, 40, 50, 90, 86, 85, 88, 75, 25, 63, 80, 85, 69, 70, 75, 85, 70, 70, 86, 80, 90, 100],
 
           lineTension: 0.25,
-            label: 'Proficiency',
-            
-            pointbackgroundColor: [
-                'rgba(255, 99, 132, 0.5)'
-                
-            ],
-            pointborderColor: [
-                'rgba(255, 99, 132, 1)',
-                
-            ],
-            borderColor: [
-                'rgba(218,107,224,1)',
-                
-            ],
-            backgroundColor: gradient,
-            borderWidth: 3
+          label: 'Proficiency',
+
+          pointbackgroundColor: [
+            'rgba(255, 99, 132, 0.5)'
+
+          ],
+          pointborderColor: [
+            'rgba(255, 99, 132, 1)',
+
+          ],
+          borderColor: [
+            'rgba(218,107,224,1)',
+
+          ],
+          backgroundColor: gradient,
+          borderWidth: 3
         }]
-    }
-});
-</script>
+      }
+    });
+  </script>
 </body>
 
 </html>
